@@ -103,6 +103,12 @@ proxy-groups:
   use:
     - MyProxy-HK
 
+- name: SG
+  type: select
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/SG.png
+  use:
+    - MyProxy-SG
+
 - name: US
   type: select
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/US.png
@@ -126,12 +132,6 @@ proxy-groups:
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/TW.png
   use:
     - MyProxy-TW
-
-- name: SG
-  type: select
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/SG.png
-  use:
-    - MyProxy-SG
 
 - name: Globle
   type: select
