@@ -123,7 +123,7 @@ proxy-groups:
 
 - name: TW
   type: select
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/TW02.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/TW.png
   use:
     - MyProxy-TW
 
