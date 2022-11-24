@@ -528,3 +528,4 @@ rules:
 - RULE-SET,MainlandIP-rules,Mainland
 - GEOIP,CN,DIRECT
 - MATCH,Final
+subscribe-url: http://sub.store/download/collection/MySub
