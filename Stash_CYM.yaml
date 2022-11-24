@@ -95,11 +95,23 @@ proxy-groups:
   use:
     - MyProxy-HK
 
+- name: HK
+  type: select
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/HK02.png
+  use:
+    - MyProxy-HK
+
 - name: SG
   type: select
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/SG.png
   use:
     - MyProxy-SG
+
+- name: Auto-US
+  type: url-test
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/US.png
+  use:
+    - MyProxy-US
 
 - name: US
   type: select
@@ -107,11 +119,7 @@ proxy-groups:
   use:
     - MyProxy-US
 
-- name: HK
-  type: select
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/HK02.png
-  use:
-    - MyProxy-HK
+
 
 - name: JP
   type: select
@@ -128,11 +136,11 @@ proxy-groups:
 - name: Globle
   type: select
   proxies:
+  - SG
   - US
   - HK
   - JP
   - TW
-  - SG
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Outside.png
@@ -140,11 +148,11 @@ proxy-groups:
 - name: GlobleMedia
   type: select
   proxies:
+  - SG
   - US
   - HK
   - JP
   - TW
-  - SG
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/GMedia.png
@@ -152,11 +160,11 @@ proxy-groups:
 - name: Netflix
   type: select
   proxies:
+  - SG
   - US
   - HK
   - JP
   - TW
-  - SG
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Netflix.png
@@ -164,11 +172,11 @@ proxy-groups:
 - name: Disney+
   type: select
   proxies:
+  - SG
   - US
   - HK
   - JP
   - TW
-  - SG
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Disney+.png
@@ -176,11 +184,11 @@ proxy-groups:
 - name: HBO
   type: select
   proxies:
+  - SG
   - US
   - HK
   - JP
   - TW
-  - SG
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/HBO.png
@@ -188,11 +196,11 @@ proxy-groups:
 - name: Youtube
   type: select
   proxies:
+  - SG
   - US
   - HK
   - JP
   - TW
-  - SG
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Youtube.png
@@ -200,11 +208,11 @@ proxy-groups:
 - name: Spotify
   type: select
   proxies:
+  - SG
   - US
   - HK
   - JP
   - TW
-  - SG
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Spotify.png
@@ -212,11 +220,11 @@ proxy-groups:
 - name: TikTok
   type: select
   proxies:
+  - SG
   - US
   - HK
   - JP
   - TW
-  - SG
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Tiktok.png
@@ -232,11 +240,11 @@ proxy-groups:
 - name: Telegram
   type: select
   proxies:
+  - SG
   - US
   - HK
   - JP
   - TW
-  - SG
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Telegram.png
@@ -244,11 +252,11 @@ proxy-groups:
 - name: Clubhouse
   type: select
   proxies:
+  - SG
   - US
   - HK
   - JP
   - TW
-  - SG
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Clubhouse.png
@@ -256,11 +264,11 @@ proxy-groups:
 - name: Twitter
   type: select
   proxies:
+  - SG
   - US
   - HK
   - JP
   - TW
-  - SG
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Twitter.png
@@ -268,11 +276,11 @@ proxy-groups:
 - name: Speedtest
   type: select
   proxies:
+  - SG
   - US
   - HK
   - JP
   - TW
-  - SG
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Speedtest.png
@@ -280,11 +288,11 @@ proxy-groups:
 - name: PayPal
   type: select
   proxies:
+  - SG
   - US
   - HK
   - JP
   - TW
-  - SG
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Paypal.png
@@ -292,11 +300,11 @@ proxy-groups:
 - name: TestFlight
   type: select
   proxies:
+  - SG
   - US
   - HK
   - JP
   - TW
-  - SG
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/TestFlight.png
@@ -304,11 +312,11 @@ proxy-groups:
 - name: Apple
   type: select
   proxies:
+  - SG
   - US
   - HK
   - JP
   - TW
-  - SG
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Apple.png
@@ -316,11 +324,11 @@ proxy-groups:
 - name: Google
   type: select
   proxies:
+  - SG
   - US
   - HK
   - JP
   - TW
-  - SG
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Google.png
@@ -328,11 +336,11 @@ proxy-groups:
 - name: Microsoft
   type: select
   proxies:
+  - SG
   - US
   - HK
   - JP
   - TW
-  - SG
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Microsoft.png
@@ -340,11 +348,11 @@ proxy-groups:
 - name: Weibo
   type: select
   proxies:
+  - SG
   - US
   - HK
   - JP
   - TW
-  - SG
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Weibo.png
@@ -352,11 +360,11 @@ proxy-groups:
 - name: Mainland
   type: select
   proxies:
+  - SG
   - US
   - HK
   - JP
   - TW
-  - SG
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Mainland.png
