@@ -109,7 +109,7 @@ proxy-groups:
 
 - name: Auto-US
   type: url-test
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/US.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/US.png
   use:
     - MyProxy-US
 
@@ -529,3 +529,4 @@ rules:
 - RULE-SET,MainlandIP-rules,Mainland
 - GEOIP,CN,DIRECT
 - MATCH,Final
+subscribe-url: http://sub.store/download/collection/MySub
