@@ -523,6 +523,7 @@ rules:
 - RULE-SET,Apple-rules,Apple
 - RULE-SET,Google-rules,Google
 - RULE-SET,Microsoft-rules,Microsoft
+- RULE-SET,Globle-rules,Globle
 - RULE-SET,Weibo-rules,Weibo
 - RULE-SET,Mainland-rules,Mainland
 - RULE-SET,MainlandIP-rules,Mainland
