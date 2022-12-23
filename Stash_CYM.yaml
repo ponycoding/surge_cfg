@@ -243,7 +243,7 @@ proxy-groups:
   - TW
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Tiktok.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/TikTok.png
 
 - name: Bilibili
   type: select
@@ -321,7 +321,7 @@ proxy-groups:
   - TW
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Paypal.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/PayPal.png
 
 - name: TestFlight
   type: select
