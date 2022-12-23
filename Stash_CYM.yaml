@@ -63,7 +63,7 @@ proxy-providers:
   #香港节点
   MyProxy-HK:
     <<: *MyProxy #引用锚点内容
-    filter: "HK|香港|港|\U0001F1ED\U0001F1F0|Hongkong"
+    filter: "HK|香港|港|\U0001F1ED\U0001F1F0|Hongkong|HongKong"
   
   #日本节点
   MyProxy-JP:
@@ -81,13 +81,32 @@ proxy-providers:
     filter: "城|新|新加坡|\U0001F1F8\U0001F1EC|SG"
   
 #策略组
+#Policy-Country
 proxy-groups:
+
+- name: Auto
+  type: url-test
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Auto.png
+  use:
+    - MyProxy
 
 - name: Proxy
   type: select
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Proxy.png
   use:
     - MyProxy
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Proxy.png
+
+- name: SG-Auto
+  type: url-test
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/Color/SG.png
+  use:
+    - MyProxy-SG
+
+- name: SG
+  type: select
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/Color/Singapore.png
+  use:
+    - MyProxy-SG
 
 - name: HK-Auto
   type: url-test
@@ -100,12 +119,6 @@ proxy-groups:
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/Color/HK.png
   use:
     - MyProxy-HK
-
-- name: SG
-  type: select
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/Color/Singapore.png
-  use:
-    - MyProxy-SG
 
 - name: US-Auto
   type: url-test
@@ -137,6 +150,9 @@ proxy-groups:
   use:
     - MyProxy-TW
 
+
+# Policy-Filter
+
 - name: Globle
   type: select
   proxies:
@@ -147,6 +163,8 @@ proxy-groups:
   - HK
   - JP
   - TW
+  - Auto
+  - Proxy
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Global.png
@@ -161,6 +179,8 @@ proxy-groups:
   - HK
   - JP
   - TW
+  - Auto
+  - Proxy
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Streaming.png
@@ -175,6 +195,8 @@ proxy-groups:
   - HK
   - JP
   - TW
+  - Auto
+  - Proxy
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Netflix.png
@@ -189,6 +211,8 @@ proxy-groups:
   - HK
   - JP
   - TW
+  - Auto
+  - Proxy
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Disney.png
@@ -203,6 +227,8 @@ proxy-groups:
   - HK
   - JP
   - TW
+  - Auto
+  - Proxy
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/HBO.png
@@ -217,6 +243,8 @@ proxy-groups:
   - HK
   - JP
   - TW
+  - Auto
+  - Proxy
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/YouTube.png
@@ -231,6 +259,8 @@ proxy-groups:
   - HK
   - JP
   - TW
+  - Auto
+  - Proxy
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Spotify.png
@@ -245,6 +275,8 @@ proxy-groups:
   - HK
   - JP
   - TW
+  - Auto
+  - Proxy
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/TikTok.png
@@ -267,6 +299,8 @@ proxy-groups:
   - HK
   - JP
   - TW
+  - Auto
+  - Proxy
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Telegram.png
@@ -281,6 +315,8 @@ proxy-groups:
   - HK
   - JP
   - TW
+  - Auto
+  - Proxy
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Clubhouse.png
@@ -295,6 +331,8 @@ proxy-groups:
   - HK
   - JP
   - TW
+  - Auto
+  - Proxy
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Twitter.png
@@ -309,6 +347,8 @@ proxy-groups:
   - HK
   - JP
   - TW
+  - Auto
+  - Proxy
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Speedtest.png
@@ -323,6 +363,8 @@ proxy-groups:
   - HK
   - JP
   - TW
+  - Auto
+  - Proxy
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/PayPal.png
@@ -337,6 +379,8 @@ proxy-groups:
   - HK
   - JP
   - TW
+  - Auto
+  - Proxy
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/TestFlight.png
@@ -351,6 +395,8 @@ proxy-groups:
   - HK
   - JP
   - TW
+  - Auto
+  - Proxy
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Apple.png
@@ -365,6 +411,8 @@ proxy-groups:
   - HK
   - JP
   - TW
+  - Auto
+  - Proxy
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Google_Search.png
@@ -379,6 +427,8 @@ proxy-groups:
   - HK
   - JP
   - TW
+  - Auto
+  - Proxy
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Microsoft.png
@@ -394,6 +444,8 @@ proxy-groups:
   - HK
   - JP
   - TW
+  - Auto
+  - Proxy
   - Final
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Weibo.png
 
@@ -408,18 +460,22 @@ proxy-groups:
   - HK
   - JP
   - TW
+  - Auto
+  - Proxy
   - Final
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/China_Map.png
 
 - name: Final
   type: select
   proxies:
+  - Auto
   - Proxy
   - DIRECT
   - US-Auto
   - US
   - HK-Auto
   - HK
+  - Final
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Final.png
 
 #远程规则集合声明
