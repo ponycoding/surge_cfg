@@ -97,7 +97,7 @@ proxy-groups:
 
 - name: HK
   type: select
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/Color/Hong_Kong.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/Color/HK.png
   use:
     - MyProxy-HK
 
@@ -115,7 +115,7 @@ proxy-groups:
 
 - name: US
   type: select
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/Color/United_States.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/Color/US.png
   use:
     - MyProxy-US
 
@@ -127,7 +127,7 @@ proxy-groups:
 
 - name: JP
   type: select
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/Color/Japan.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/Color/JP.png
   use:
     - MyProxy-JP
 
