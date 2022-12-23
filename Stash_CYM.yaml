@@ -87,35 +87,35 @@ proxy-groups:
   type: select
   use:
     - MyProxy
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Proxy.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Proxy.png
 
-- name: Auto-HK
+- name: HK-Auto
   type: url-test
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Auto.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Auto.png
   use:
     - MyProxy-HK
 
 - name: HK
   type: select
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/HK02.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/Color/Hong_Kong.png
   use:
     - MyProxy-HK
 
 - name: SG
   type: select
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/SG.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/Color/Singapore.png
   use:
     - MyProxy-SG
 
-- name: Auto-US
+- name: US-Auto
   type: url-test
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/US.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/Color/United_States.png
   use:
     - MyProxy-US
 
 - name: US
   type: select
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/US.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/Color/United_States.png
   use:
     - MyProxy-US
 
@@ -123,13 +123,13 @@ proxy-groups:
 
 - name: JP
   type: select
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/JP.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/Color/Japan.png
   use:
     - MyProxy-JP
 
 - name: TW
   type: select
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/TW.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/Color/Taiwan.png
   use:
     - MyProxy-TW
 
@@ -137,245 +137,286 @@ proxy-groups:
   type: select
   proxies:
   - SG
+  - US-Auto
   - US
+  - HK-Auto
   - HK
   - JP
   - TW
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Outside.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Global.png
 
 - name: GlobleMedia
   type: select
   proxies:
   - SG
+  - US-Auto
   - US
+  - HK-Auto
   - HK
   - JP
   - TW
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/GMedia.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Streaming.png
 
 - name: Netflix
   type: select
   proxies:
   - SG
+  - US-Auto
   - US
+  - HK-Auto
   - HK
   - JP
   - TW
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Netflix.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Netflix.png
 
 - name: Disney+
   type: select
   proxies:
   - SG
+  - US-Auto
   - US
+  - HK-Auto
   - HK
   - JP
   - TW
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Disney+.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Disney.png
 
 - name: HBO
   type: select
   proxies:
   - SG
+  - US-Auto
   - US
+  - HK-Auto
   - HK
   - JP
   - TW
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/HBO.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/HBO.png
 
 - name: Youtube
   type: select
   proxies:
   - SG
+  - US-Auto
   - US
+  - HK-Auto
   - HK
   - JP
   - TW
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Youtube.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/YouTube.png
 
 - name: Spotify
   type: select
   proxies:
   - SG
+  - US-Auto
   - US
+  - HK-Auto
   - HK
   - JP
   - TW
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Spotify.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Spotify.png
 
 - name: TikTok
   type: select
   proxies:
   - SG
+  - US-Auto
   - US
+  - HK-Auto
   - HK
   - JP
   - TW
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Tiktok.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Tiktok.png
 
 - name: Bilibili
   type: select
   proxies:
-  - HK
-  - TW
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Bilibili.png
+  - HK-Auto
+  - TW
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Bilibili.png
 
 - name: Telegram
   type: select
   proxies:
   - SG
+  - US-Auto
   - US
+  - HK-Auto
   - HK
   - JP
   - TW
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Telegram.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Telegram.png
 
 - name: Clubhouse
   type: select
   proxies:
   - SG
+  - US-Auto
   - US
+  - HK-Auto
   - HK
   - JP
   - TW
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Clubhouse.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Clubhouse.png
 
 - name: Twitter
   type: select
   proxies:
   - SG
+  - US-Auto
   - US
+  - HK-Auto
   - HK
   - JP
   - TW
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Twitter.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Twitter.png
 
 - name: Speedtest
   type: select
   proxies:
   - SG
+  - US-Auto
   - US
+  - HK-Auto
   - HK
   - JP
   - TW
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Speedtest.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Speedtest.png
 
 - name: PayPal
   type: select
   proxies:
   - SG
+  - US-Auto
   - US
+  - HK-Auto
   - HK
   - JP
   - TW
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Paypal.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Paypal.png
 
 - name: TestFlight
   type: select
   proxies:
   - SG
+  - US-Auto
   - US
+  - HK-Auto
   - HK
   - JP
   - TW
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/TestFlight.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/TestFlight.png
 
 - name: Apple
   type: select
   proxies:
   - SG
+  - US-Auto
   - US
+  - HK-Auto
   - HK
   - JP
   - TW
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Apple.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Apple.png
 
 - name: Google
   type: select
   proxies:
   - SG
+  - US-Auto
   - US
+  - HK-Auto
   - HK
   - JP
   - TW
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Google.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Google_Search.png
 
 - name: Microsoft
   type: select
   proxies:
   - SG
+  - US-Auto
   - US
+  - HK-Auto
   - HK
   - JP
   - TW
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Microsoft.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Microsoft.png
 
 - name: Weibo
   type: select
   proxies:
+  - DIRECT
   - SG
+  - US-Auto
   - US
+  - HK-Auto
   - HK
   - JP
   - TW
   - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Weibo.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Weibo.png
 
 - name: Mainland
   type: select
   proxies:
+  - DIRECT
   - SG
+  - US-Auto
   - US
+  - HK-Auto
   - HK
   - JP
   - TW
   - Final
-  - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Mainland.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/China_Map.png
 
 - name: Final
   type: select
   proxies:
-  - DIRECT
-  - Auto-HK
   - Proxy
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Final01.png
+  - DIRECT
+  - US-Auto
+  - US
+  - HK-Auto
+  - HK
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Final.png
 
 #远程规则集合声明
 rule-providers:
