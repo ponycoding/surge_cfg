@@ -215,7 +215,7 @@ proxy-groups:
   - Proxy
   - Final
   - DIRECT
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Disney.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Disney+.png
 
 - name: HBO
   type: select
