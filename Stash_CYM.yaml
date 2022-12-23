@@ -119,7 +119,11 @@ proxy-groups:
   use:
     - MyProxy-US
 
-
+- name: JP-Auto
+  type: url-test
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/Color/Japan.png
+  use:
+    - MyProxy-JP
 
 - name: JP
   type: select
