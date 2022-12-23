@@ -475,7 +475,6 @@ proxy-groups:
   - US
   - HK-Auto
   - HK
-  - Final
   icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Filter/Color/Final.png
 
 #远程规则集合声明
