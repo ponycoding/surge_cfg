@@ -110,7 +110,7 @@ proxy-groups:
 
 - name: HK-Auto
   type: url-test
-  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/Color/HongKong.png
+  icon: https://raw.githubusercontent.com/ponycoding/surge_cfg/main/icons/Policy-Country/Color/Hong_Kong.png
   use:
     - MyProxy-HK
 
