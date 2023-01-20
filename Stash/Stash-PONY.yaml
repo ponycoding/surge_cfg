@@ -51,6 +51,15 @@ proxy-groups:
   - TW-AUTO
   - DIRECT
   type: select
+# 自动选择
+- icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Auto.png
+  include-all: true
+  interval: 120
+  lazy: true
+  name: AUTO-SELE
+  tolerance: 50
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
 # 指定
 - icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Static.png
   include-all: true
@@ -59,6 +68,22 @@ proxy-groups:
   name: SELECTED
   type: select
   url: http://cp.cloudflare.com/generate_204
+# 默认
+- icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Final.png
+  name: FINAL
+  proxies:
+  - AUTO-SELE
+  - SELECTED
+  - HK-AUTO
+  - HK-SELE
+  - SG-AUTO
+  - SG-SELE
+  - US-AUTO
+  - US-SELE
+  - JP-AUTO
+  - TW-AUTO
+  - DIRECT
+  type: select
 # Netflix
 - icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Netflix.png
   name: Netflix
@@ -123,6 +148,38 @@ proxy-groups:
   - TW-AUTO
   - DIRECT
   type: select
+# Tiktok
+- icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/TikTok.png
+  name: TikTok
+  proxies:
+  - AUTO-SELE
+  - SELECTED
+  - HK-AUTO
+  - HK-SELE
+  - SG-AUTO
+  - SG-SELE
+  - US-AUTO
+  - US-SELE
+  - JP-AUTO
+  - TW-AUTO
+  - DIRECT
+  type: select
+# Apple
+- icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Apple.png
+  name: Apple
+  proxies:
+  - AUTO-SELE
+  - SELECTED
+  - HK-AUTO
+  - HK-SELE
+  - SG-AUTO
+  - SG-SELE
+  - US-AUTO
+  - US-SELE
+  - JP-AUTO
+  - TW-AUTO
+  - DIRECT
+  type: select
 # Speedtest
 - icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Speedtest.png
   name: Speedtest
@@ -139,31 +196,7 @@ proxy-groups:
   - TW-AUTO
   - DIRECT
   type: select
-# 默认
-- icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Final.png
-  name: FINAL
-  proxies:
-  - AUTO-SELE
-  - SELECTED
-  - HK-AUTO
-  - HK-SELE
-  - SG-AUTO
-  - SG-SELE
-  - US-AUTO
-  - US-SELE
-  - JP-AUTO
-  - TW-AUTO
-  - DIRECT
-  type: select
-# 自动选择
-- icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Auto.png
-  include-all: true
-  interval: 120
-  lazy: true
-  name: AUTO-SELE
-  tolerance: 50
-  type: url-test
-  url: http://cp.cloudflare.com/generate_204
+
 
 ## 区域
 - filter: "港|\U0001F1ED\U0001F1F0|HK|(?i)Hong"
@@ -269,6 +302,10 @@ rule-providers:
     behavior: domain
     interval: 86400
     url: https://rules.kr328.app/github.yaml
+  apple:
+    behavior: domain
+    interval: 86400
+    url: https://rules.kr328.app/apple.yaml
   google:
     behavior: domain
     interval: 86400
@@ -321,6 +358,11 @@ rule-providers:
     behavior: domain
     interval: 86400
     url: https://rules.kr328.app/youtube.yaml
+  tiktok:
+    behavior: domain
+    interval: 86400
+    url: https://rules.kr328.app/tiktok.yaml
+  
 ##
 rules:
 - SCRIPT,quic,REJECT
@@ -337,7 +379,9 @@ rules:
 - PROCESS-NAME,Telegram,PROXY
 - RULE-SET,telegram,PROXY
 - RULE-SET,youtube,YouTube
+- RULE-SET,tiktok,TikTok
 - RULE-SET,google,PROXY
+- RULE-SET,apple,Apple
 - RULE-SET,twitter,PROXY
 - DOMAIN-SUFFIX,tapbots.com,PROXY
 - RULE-SET,instagram,PROXY
