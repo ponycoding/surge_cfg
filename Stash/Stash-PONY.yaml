@@ -37,15 +37,18 @@ dns:
 proxy-groups:
 # 手动选择
 - icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png
-  name: Proxy_Sel
+  name: PROXY
   proxies:
-  - AUTO-SEL
+  - AUTO-SELE
   - SELECTED
   - HK-AUTO
-  - TW-AUTO
+  - HK-SELE
   - SG-AUTO
-  - JP-AUTO
+  - SG-SELE
   - US-AUTO
+  - US-SELE
+  - JP-AUTO
+  - TW-AUTO
   - DIRECT
   type: select
 # 指定
@@ -60,78 +63,96 @@ proxy-groups:
 - icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Netflix.png
   name: Netflix
   proxies:
-  - AUTO-SEL
+  - AUTO-SELE
   - SELECTED
   - HK-AUTO
-  - TW-AUTO
+  - HK-SELE
   - SG-AUTO
-  - JP-AUTO
+  - SG-SELE
   - US-AUTO
+  - US-SELE
+  - JP-AUTO
+  - TW-AUTO
   - DIRECT
   type: select
 # Disney+
 - icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Disney%2B.png
   name: Disney+
   proxies:
-  - AUTO-SEL
+  - AUTO-SELE
   - SELECTED
   - HK-AUTO
-  - TW-AUTO
+  - HK-SELE
   - SG-AUTO
-  - JP-AUTO
+  - SG-SELE
   - US-AUTO
+  - US-SELE
+  - JP-AUTO
+  - TW-AUTO
   - DIRECT
   type: select
 # Spotify
 - icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Spotify.png
   name: Spotify
   proxies:
-  - AUTO-SEL
+  - AUTO-SELE
   - SELECTED
   - HK-AUTO
-  - TW-AUTO
+  - HK-SELE
   - SG-AUTO
-  - JP-AUTO
+  - SG-SELE
   - US-AUTO
+  - US-SELE
+  - JP-AUTO
+  - TW-AUTO
   - DIRECT
   type: select
 # YouTube
 - icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/YouTube.png
   name: YouTube
   proxies:
-  - AUTO-SEL
+  - AUTO-SELE
   - SELECTED
   - HK-AUTO
-  - HK-Sel
-  - TW-AUTO
+  - HK-SELE
   - SG-AUTO
-  - SG-Sel
-  - JP-AUTO
+  - SG-SELE
   - US-AUTO
-  - US-Sel
+  - US-SELE
+  - JP-AUTO
+  - TW-AUTO
   - DIRECT
   type: select
 # Speedtest
 - icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Speedtest.png
   name: Speedtest
   proxies:
-  - AUTO-SEL
+  - AUTO-SELE
   - SELECTED
   - HK-AUTO
-  - TW-AUTO
+  - HK-SELE
   - SG-AUTO
-  - JP-AUTO
+  - SG-SELE
   - US-AUTO
+  - US-SELE
+  - JP-AUTO
+  - TW-AUTO
   - DIRECT
   type: select
 # 默认
 - icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Final.png
-  name: Default
+  name: FINAL
   proxies:
-  - US-AUTO
-  - TW-AUTO
+  - AUTO-SELE
+  - SELECTED
   - HK-AUTO
-  - Proxy_Sel
+  - HK-SELE
+  - SG-AUTO
+  - SG-SELE
+  - US-AUTO
+  - US-SELE
+  - JP-AUTO
+  - TW-AUTO
   - DIRECT
   type: select
 # 自动选择
@@ -139,7 +160,7 @@ proxy-groups:
   include-all: true
   interval: 120
   lazy: true
-  name: AUTO-SEL
+  name: AUTO-SELE
   tolerance: 50
   type: url-test
   url: http://cp.cloudflare.com/generate_204
@@ -160,7 +181,7 @@ proxy-groups:
   include-all: true
   interval: 120
   lazy: true
-  name: HK-Sel
+  name: HK-SELE
   proxies: []
   tolerance: 50
   type: select
@@ -181,7 +202,7 @@ proxy-groups:
   include-all: true
   interval: 120
   lazy: true
-  name: SG-Sel
+  name: SG-SELE
   proxies: []
   tolerance: 50
   type: select
@@ -202,7 +223,7 @@ proxy-groups:
   include-all: true
   interval: 120
   lazy: true
-  name: US-Sel
+  name: US-SELE
   tolerance: 50
   type: select
   url: http://cp.cloudflare.com/generate_204
@@ -307,30 +328,30 @@ rules:
 - RULE-SET,disney,Disney+
 - RULE-SET,spotify,Spotify
 - RULE-SET,speedtest,Speedtest
-- RULE-SET,github,Proxy_Sel
-- IP-ASN,62014,Proxy_Sel,no-resolve
-- IP-ASN,59930,Proxy_Sel,no-resolve
-- IP-ASN,44907,Proxy_Sel,no-resolve
-- IP-ASN,211157,Proxy_Sel,no-resolve
-- PROCESS-NAME,Telegram.exe,Proxy_Sel
-- PROCESS-NAME,Telegram,Proxy_Sel
-- RULE-SET,telegram,Proxy_Sel
+- RULE-SET,github,PROXY
+- IP-ASN,62014,PROXY,no-resolve
+- IP-ASN,59930,PROXY,no-resolve
+- IP-ASN,44907,PROXY,no-resolve
+- IP-ASN,211157,PROXY,no-resolve
+- PROCESS-NAME,Telegram.exe,PROXY
+- PROCESS-NAME,Telegram,PROXY
+- RULE-SET,telegram,PROXY
 - RULE-SET,youtube,YouTube
-- RULE-SET,google,Proxy_Sel
-- RULE-SET,twitter,Proxy_Sel
-- DOMAIN-SUFFIX,tapbots.com,Proxy_Sel
-- RULE-SET,instagram,Proxy_Sel
-- RULE-SET,facebook,Proxy_Sel
+- RULE-SET,google,PROXY
+- RULE-SET,twitter,PROXY
+- DOMAIN-SUFFIX,tapbots.com,PROXY
+- RULE-SET,instagram,PROXY
+- RULE-SET,facebook,PROXY
 - RULE-SET,steam@cn,DIRECT
-- RULE-SET,steam,Proxy_Sel
+- RULE-SET,steam,PROXY
 - DOMAIN-SUFFIX,iphone-ld.apple.com,DIRECT
 - DOMAIN-SUFFIX,lcdn-locator.apple.com,DIRECT
 - DOMAIN-SUFFIX,lcdn-registration.apple.com,DIRECT
 - DOMAIN-SUFFIX,push.apple.com,DIRECT
-- PROCESS-NAME,trustd,Proxy_Sel
+- PROCESS-NAME,trustd,PROXY
 - RULE-SET,microsoft@cn,DIRECT
-- RULE-SET,microsoft,Proxy_Sel
-- RULE-SET,xbox,Proxy_Sel
+- RULE-SET,microsoft,PROXY
+- RULE-SET,xbox,PROXY
 - PROCESS-NAME,v2ray,DIRECT
 - PROCESS-NAME,Surge,DIRECT
 - PROCESS-NAME,ss-local,DIRECT
@@ -354,7 +375,7 @@ rules:
 - PROCESS-NAME,WebTorrent,DIRECT
 - GEOIP,LAN,DIRECT
 - GEOIP,CN,DIRECT
-- MATCH,Default
+- MATCH,FINAL
 #
 script:
   shortcuts:
