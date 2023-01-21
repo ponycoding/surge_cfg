@@ -119,7 +119,7 @@ proxy-groups:
 # Facebook
 # Instagram
 # Google
-- icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Google.png
+- icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Google_Search.png
   name: Google
   proxies:
   - AUTO-SELE
