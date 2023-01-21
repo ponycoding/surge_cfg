@@ -182,21 +182,6 @@ proxy-groups:
   - TW-AUTO
   - DIRECT
   type: select
-
-  name: YouTube
-  proxies:
-  - AUTO-SELE
-  - SELECTED
-  - HK-AUTO
-  - HK-SELE
-  - SG-AUTO
-  - SG-SELE
-  - US-AUTO
-  - US-SELE
-  - JP-AUTO
-  - TW-AUTO
-  - DIRECT
-  type: select
 # Telegram
 - icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Telegram.png
   name: Telegram
@@ -229,21 +214,6 @@ proxy-groups:
   - TW-AUTO
   - DIRECT
   type: select
-
-  name: Apple
-  proxies:
-  - AUTO-SELE
-  - SELECTED
-  - HK-AUTO
-  - HK-SELE
-  - SG-AUTO
-  - SG-SELE
-  - US-AUTO
-  - US-SELE
-  - JP-AUTO
-  - TW-AUTO
-  - DIRECT
-  type: select
 # Twitter
 - icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Twitter.png
   name: Twitter
@@ -262,6 +232,20 @@ proxy-groups:
   type: select
 # YouTube
 - icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/YouTube.png
+  name: YouTube
+  proxies:
+  - AUTO-SELE
+  - SELECTED
+  - HK-AUTO
+  - HK-SELE
+  - SG-AUTO
+  - SG-SELE
+  - US-AUTO
+  - US-SELE
+  - JP-AUTO
+  - TW-AUTO
+  - DIRECT
+  type: select
 # Speedtest
 - icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Speedtest.png
   name: Speedtest
