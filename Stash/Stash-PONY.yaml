@@ -274,7 +274,7 @@ proxy-groups:
   type: url-test
   url: http://cp.cloudflare.com/generate_204
 - filter: "港|\U0001F1ED\U0001F1F0|HK|(?i)Hong"
-  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/mini/Hong_Kong.png
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Dark/Hong_Kong.png
   include-all: true
   interval: 120
   lazy: true
@@ -293,7 +293,7 @@ proxy-groups:
   type: url-test
   url: http://cp.cloudflare.com/generate_204
 - filter: "新加坡|坡|狮城|\U0001F1F8\U0001F1EC|SG|(?i)Singapore"
-  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/mini/Singapore.png
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Dark/Singapore.png
   include-all: true
   interval: 120
   lazy: true
@@ -312,7 +312,7 @@ proxy-groups:
   type: url-test
   url: http://cp.cloudflare.com/generate_204
 - filter: "美|\U0001F1FA\U0001F1F2|US|(?i)States|American"
-  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/mini/United_States.png
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Dark/United_States.png
   include-all: true
   interval: 120
   lazy: true
