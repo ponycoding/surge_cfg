@@ -359,7 +359,7 @@ proxy-groups:
 proxy-providers:
   MySubs:
     interval: 600
-    url: https://sub.store/download/collection/MySubs
+    url: https://sub.store/download/collection/MySub1
 
 ##
 rule-providers:
