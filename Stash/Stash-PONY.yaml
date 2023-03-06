@@ -1,4 +1,4 @@
-# update : Jan 21, 2023
+# update : Mar 06, 2023
 mode: rule
 log-level: info
 #
@@ -262,6 +262,22 @@ proxy-groups:
   - TW-AUTO
   - DIRECT
   type: select
+# CryptoCurrency
+- icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Cryptocurrency.png
+  name: Crypto
+  proxies:
+  - AUTO-SELE
+  - SELECTED
+  - HK-AUTO
+  - HK-SELE
+  - SG-AUTO
+  - SG-SELE
+  - US-AUTO
+  - US-SELE
+  - JP-AUTO
+  - TW-AUTO
+  - DIRECT
+  type: select
 
 ## Proxy Area
 - filter: "港|\U0001F1ED\U0001F1F0|HK|(?i)Hong"
@@ -420,6 +436,10 @@ rule-providers:
     behavior: domain
     interval: 86400
     url: https://rules.kr328.app/tiktok.yaml
+  crypto-rules:
+    behavior: domain
+    interval: 86400
+    url: https://rules.kr328.app/category-cryptocurrency.yaml
   
 ##
 rules:
@@ -442,6 +462,7 @@ rules:
 - RULE-SET,steam-rules,PROXY
 - RULE-SET,speedtest-rules,Speedtest
 - RULE-SET,xbox-rules,PROXY
+- RULE-SET,crypto-rules,Crypto
 - DOMAIN-SUFFIX,tapbots.com,PROXY
 - DOMAIN-SUFFIX,iphone-ld.apple.com,DIRECT
 - DOMAIN-SUFFIX,lcdn-locator.apple.com,DIRECT
