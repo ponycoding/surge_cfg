@@ -357,9 +357,9 @@ proxy-groups:
 
 ##
 proxy-providers:
-  MySub1:
+  MySubSmart:
     interval: 7200
-    url: https://sub.store/download/collection/MySub1
+    url: https://sub.store/download/collection/MySubSmart
 
 ##
 rule-providers:
@@ -480,4 +480,4 @@ rules:
 script:
   shortcuts:
     quic: network == 'udp' and dst_port == 443
-subscribe-url: https://sub.store/download/collection/MySub1
+subscribe-url: https://sub.store/download/collection/MySubSmart
