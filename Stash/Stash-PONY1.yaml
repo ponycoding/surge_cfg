@@ -357,8 +357,8 @@ proxy-groups:
 
 ##
 proxy-providers:
-  MySubs:
-    interval: 600
+  MySub1:
+    interval: 7200
     url: https://sub.store/download/collection/MySub1
 
 ##
