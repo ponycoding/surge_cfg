@@ -69,26 +69,29 @@ dl.l.google.com = server:119.29.29.29
 Sub-Store = https://sub.store/download/collection/MySubs,udp=false,fast-open=false,vmess-aead=false,enabled=true
 
 [Proxy Group]
-ALL-SUB = url-test,KR,JP,HK,TW,US,SG,Others,url = http://www.gstatic.com/generate_204,interval = 60,tolerance = 1500,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/SWCloud.png
-HK = url-test,HK_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/HK.png
-TW = url-test,TW_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1500,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/TW.png
-US = url-test,US_Filter,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/US.png
-KR = url-test,KR_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1500,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/KR.png
-JP = url-test,JP_Filter,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/JP.png
-SG = url-test,SG_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 2000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/SG.png
-Others = url-test,IN_Filter,BZ_Filter,TU_Filter,RS_Filter,url = http://www.gstatic.com/generate_204,interval = 1800,tolerance = 3000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/UN.png
-TikTok = select,US_Filter,Selected,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/TikTok.png
 Selected = select,HK_Filter,SG_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
 Apple = select,DIRECT,Selected,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
 Netflix = select,Selected,SG_Filter,HK_Filter,TW_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
-Youtube = select,Selected,HK_Filter,SG_Filter,KR_Filter,US_Filter,US-Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+TikTok = select,US_Filter,Selected,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/TikTok.png
+Youtube = select,Selected,HK_Filter,SG_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+Microsoft = select,Selected,HK_Filter,SG_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
 Telegram = select,Selected,HK_Filter,SG_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
 Streaming_exter = select,Selected,SG_Filter,HK_Filter,TW_Filter,KR_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
 String_inter = select,DIRECT,TW_Filter,HK_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/StreamingSE.png
 FINAL = select,DIRECT,Selected,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+ALL-SUB = url-test,KR,JP,HK,TW,US,SG,Others,url = http://www.gstatic.com/generate_204,interval = 60,tolerance = 1500,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/SWCloud.png
+SG = url-test,SG_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 2000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/SG.png
+SG-s = select,SG_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 2000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/SG.png
+US = url-test,US_Filter,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/US.png
+US-s = select,US_Filter,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/US.png
+HK = url-test,HK_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/HK.png
+HK-s = select,HK_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/HK.png
+TW = url-test,TW_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1500,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/TW.png
+KR = url-test,KR_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1500,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/KR.png
+JP = url-test,JP_Filter,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/JP.png
+Others = url-test,IN_Filter,BZ_Filter,TU_Filter,RS_Filter,url = http://www.gstatic.com/generate_204,interval = 1800,tolerance = 3000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/UN.png
+
 [Remote Filter]
-
-
 SG_Filter = NameRegex, FilterKey = "(?i)(新加坡|坡|狮城|SG|Singapore)"
 US_Filter = NameRegex, FilterKey = "(?i)(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States)"
 HK_Filter = NameRegex, FilterKey = "(?i)(港|HK|Hong)"
@@ -112,6 +115,20 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Zhihu/Zhihu.list, policy=DIRECT, tag=知乎, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/WeChat/WeChat.list, policy=DIRECT, tag=微信, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ZhihuAds/ZhihuAds.list, policy=REJECT-DROP, tag=知乎去广告, enabled=true
+#
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Microsoft/Microsoft.list, policy=Microsoft, tag=Microsoft, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/TikTok/TikTok.list, policy=TikTok, tag=TikTok, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/YouTube/YouTube.list, policy=Youtube, tag=Youtube, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Netflix/Netflix.list, policy=Netflix, tag=Netflix, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Apple/Apple.list, policy=Apple, tag=Apple, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Telegram/Telegram.list, policy=Telegram, tag=Telegram, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list, policy=REJECT, tag=去广告, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/TestFlight/TestFlight.list, policy=节点选择, tag=TestFlight, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/GlobalMedia/GlobalMedia.list, policy=节点选择, tag=国外媒体, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/BiliBili/BiliBili.list, policy=港台番剧, tag=国内媒体, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Proxy/Proxy.list, policy=节点选择, tag=全球规则, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Proxy/Proxy_Domain.list, policy=节点选择, tag=全球规则, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/China/China.list, policy=DIRECT, tag=直连, enabled=true
 
 [Rewrite]
 
@@ -129,7 +146,7 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Lo
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Loon/Advertising/Advertising.plugin, policy=REJECT, tag=Advertising, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Loon/AdvertisingScript/AdvertisingScript.plugin, policy=REJECT, tag=AdvertisingScript, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Loon/AllInOne/AllInOne.plugin, policy=REJECT, tag=ALL IN ONE, enabled=true
-https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/Loon/Plugin/bilibili.plugin, policy=DIRECT, tag=哔哩哔哩, enabled=true
+https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/Loon/Plugin/bilibili.plugin, policy=DIRECT, tag=Bilibili, enabled=true
 https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/Loon/Plugin/YouTubeAd.plugin, policy=REJECT, tag=YouTubeADs, enabled=true
 https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.loon.plugin, enabled=true
 https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/Loon.plugin, tag=订阅解析器, enabled=true
