@@ -100,7 +100,7 @@ Streaming_exter = select,Proxys,SG,HK,US,img-url = https://raw.githubusercontent
 Streaming_inter = select,DIRECT,TW-auto,HK-auto,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/StreamingSE.png
 #Facebook
 #Instagram
-FINAL = select,DIRECT,SG,SG-auto,US,US-auto,HK,HK-auto,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+FINAL = select,SG-auto,HK-auto,DIRECT,SG,US,US-auto,HK,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
 #
 Proxys = select,SG,US,HK,HK_Filter,SG_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
 ALL-SUB = url-test,KR,JP,HK,TW,US,SG,Others,url = http://www.gstatic.com/generate_204,interval = 60,tolerance = 1500,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/SWCloud.png
