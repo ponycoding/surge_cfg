@@ -72,7 +72,7 @@ Sub-Store = https://sub.store/download/collection/MySubs,udp=false,fast-open=fal
 SG = select,SG_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 2000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/SG.png
 US = select,US_Filter,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/US.png
 HK = select,HK_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/HK.png
-Youtube = select,Selected,HK,SG,US,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+Youtube = select,HK,SG,US,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
 Netflix = select,Selected,SG_Filter,HK_Filter,TW_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
 Apple = select,DIRECT,Selected,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
 Microsoft = select,Selected,HK_Filter,SG_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
