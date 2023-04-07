@@ -77,7 +77,7 @@ Youtube = select,SG,US,SG-auto,US-auto,HK,HK-auto,img-url = https://raw.githubus
 #Netflix
 Netflix = select,SG,SG-auto,US,US-auto,HK,HK-auto,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
 #Apple
-Apple = select,SG,SG-auto,US,US-auto,HK,HK-auto,DIRECT,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
+Apple = select,SG,SG-auto,HK-auto,US-auto,US,HK,DIRECT,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
 #Google
 Google = select,SG,SG-auto,US,US-auto,HK,HK-auto,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
 #Microsoft
