@@ -1,0 +1,141 @@
+[General]
+# > Google，Cloudflare，腾讯，阿里云 DoH
+doh-server = https://dns.google/dns-query,https://1.1.1.1/dns-query,https://doh.pub/dns-query,https://dns.alidns.com/dns-query
+
+# > IPv6 支持（默认关闭）
+ipv6 = false
+
+# > 跳过代理
+skip-proxy = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local,e.crashlynatics.com,*.cmpassport.com,*.jegotrip.com.cn,*.icitymobile.mobi,id6.me,*.pingan.com.cn,*.cmbchina.com
+
+# > 旁路隧道
+bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
+
+# > dns服务器
+dns-server = system,223.5.5.5,223.6.6.6,119.29.29.29
+
+# > wifi 访问
+allow-wifi-access = false
+allow-udp-proxy = false
+# > wifi 访问（http 端口）
+wifi-access-http-port = 7222
+# > wifi 访问（socket5 端口）
+wifi-access-socks5-port = 7221
+
+# > 代理测试网址
+proxy-test-url = http://www.gstatic.com/generate_204
+# > 测试超时
+test-timeout = 2
+# > 节点连续失败 3 后进行节点切换
+switch-node-after-failure-times = 3
+
+# > 接口模式
+interface-mode = auto
+
+# > 解决一些ip请求无法匹配域名类规则的问题。real-ip指定的域名将不返回fake ip响应，直接将dns请求发往目标dns服务器
+real-ip = msftconnecttest.com, msftncsi.com, *.msftconnecttest.com, *.msftncsi.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, *.battlenet.com.cn, *.battlenet.com, *.blzstatic.cn, *.battle.net
+
+# > 资源解析器
+resource-parser = https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/dist/sub-store-parser.loon.min.js
+
+# > ssid-trigger参数，用于指定SSID下流量模式切换，（default表示默认，cellular表示蜂窝，目前支持三种值：rule，direct，proxy） 
+# ssid-trigger="default":rule,"cellular":rule,"ASUS":direct,"TPLINK":proxy 
+
+[Host]
+*.taobao.com = server:223.5.5.5
+*.tmall.com = server:223.5.5.5
+*.jd.com = server:119.28.28.28
+*.qq.com = server:119.28.28.28
+*.tencent.com = server:119.28.28.28
+*.alicdn.com = server:223.5.5.5
+*.aliyun.com = server:223.5.5.5
+*.weixin.com = server:119.28.28.28
+*.163.com = server:119.29.29.29
+*.126.com = server:119.29.29.29
+*.126.net = server:119.29.29.29
+*.127.net = server:119.29.29.29
+*.netease.com = server:119.29.29.29
+*.mi.com = server:119.29.29.29
+*.xiaomi.com = server:119.29.29.29
+*.bilibili.com = server:119.29.29.29
+*testflight.apple.com = server:8.8.4.4
+mtalk.google.com = 108.177.125.188
+dl.google.com = server:119.29.29.29
+dl.l.google.com = server:119.29.29.29
+
+[Proxy]
+
+[Remote Proxy]
+Sub-Store = https://sub.store/download/collection/MySubs,udp=false,fast-open=false,vmess-aead=false,enabled=true
+
+[Proxy Group]
+ALL-SUB = url-test,KR,JP,HK,TW,US,SG,Others,url = http://www.gstatic.com/generate_204,interval = 60,tolerance = 1500,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/SWCloud.png
+HK = url-test,HK_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/HK.png
+TW = url-test,TW_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1500,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/TW.png
+US = url-test,US_Filter,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/US.png
+KR = url-test,KR_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1500,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/KR.png
+JP = url-test,JP_Filter,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/JP.png
+SG = url-test,SG_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 2000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/SG.png
+Others = url-test,IN_Filter,BZ_Filter,TU_Filter,RS_Filter,url = http://www.gstatic.com/generate_204,interval = 1800,tolerance = 3000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/UN.png
+TikTok = select,US_Filter,Selected,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/TikTok.png
+Selected = select,HK_Filter,SG_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
+Apple = select,DIRECT,Selected,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
+Netflix = select,Selected,SG_Filter,HK_Filter,TW_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
+Youtube = select,Selected,HK_Filter,SG_Filter,KR_Filter,US_Filter,US-Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+Telegram = select,Selected,HK_Filter,SG_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+Streaming_exter = select,Selected,SG_Filter,HK_Filter,TW_Filter,KR_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
+String_inter = select,DIRECT,TW_Filter,HK_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/StreamingSE.png
+FINAL = select,DIRECT,Selected,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+[Remote Filter]
+
+
+SG_Filter = NameRegex, FilterKey = "(?i)(新加坡|坡|狮城|SG|Singapore)"
+US_Filter = NameRegex, FilterKey = "(?i)(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States)"
+HK_Filter = NameRegex, FilterKey = "(?i)(港|HK|Hong)"
+TW_Filter = NameRegex, FilterKey = "(?i)(台|TW|Tai)"
+JP_Filter = NameRegex, FilterKey = "(?i)(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan)"
+KR_Filter = NameRegex, FilterKey = "(?i)(KR|Korea|KOR|首尔|韩|韓)"
+TU_Filter = NameKeyword, FilterKey = "土耳其"
+BZ_Filter = NameKeyword, FilterKey = "巴西"
+IN_Filter = NameKeyword, FilterKey = "印度"
+RS_Filter = NameKeyword, FilterKey = "俄罗斯"
+
+[Rule]
+GEOIP,cn,DIRECT
+FINAL,ALL-SUB
+
+[Remote Rule]
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Proxy/Proxy.list, policy=ALL-SUB, tag=Global, parser-enable=true, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Bilibili.list, policy=DIRECT, tag=哔哩哔哩, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/XiaoHongShu/XiaoHongShu.list, policy=DIRECT, tag=小红书, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Weibo/Weibo.list, policy=DIRECT, tag=微博, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Zhihu/Zhihu.list, policy=DIRECT, tag=知乎, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/WeChat/WeChat.list, policy=DIRECT, tag=微信, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ZhihuAds/ZhihuAds.list, policy=REJECT-DROP, tag=知乎去广告, enabled=true
+
+[Rewrite]
+
+[Script]
+http-response ^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) script-path=weathervip.js, requires-body=true, timeout=10, tag=彩云天气VIP
+http-response ^https?:\/\/backend\.getdrafts\.com\/api\/v1\/verification\/verify_receipt script-path=drafts.js, requires-body=true, timeout=10, tag=DraftsVIP
+
+[Plugin]
+https://github.com/Tartarus2014/Loon-Script/raw/master/Plugin/skip-proxy.plugin, policy=DIRECT, tag=skip-proxy, enabled=false
+https://github.com/Tartarus2014/Loon-Script/raw/master/Plugin/For-own-use.plugin, policy=DIRECT, tag=For-own-use, enabled=false
+https://github.com/Tartarus2014/Loon-Script/raw/master/Plugin/ChangeUA.plugin, policy=DIRECT, tag=ChangeUA, enabled=false
+https://github.com/Tartarus2014/Loon-Script/raw/master/Plugin/Unlock/TikTokUS.plugin, policy=US-Filter, tag=TiktokUS, enabled=true
+https://github.com/Tartarus2014/Loon-Script/raw/master/Plugin/Host.plugin, tag=Host, img-url=externaldrive.fill.badge.wifi, enabled=false
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Loon/Redirect/Redirect.plugin, policy=ALL-SUB, tag=重定向, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Loon/Advertising/Advertising.plugin, policy=REJECT, tag=Advertising, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Loon/AdvertisingScript/AdvertisingScript.plugin, policy=REJECT, tag=AdvertisingScript, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Loon/AllInOne/AllInOne.plugin, policy=REJECT, tag=ALL IN ONE, enabled=true
+https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/Loon/Plugin/bilibili.plugin, policy=DIRECT, tag=哔哩哔哩, enabled=true
+https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/Loon/Plugin/YouTubeAd.plugin, policy=REJECT, tag=YouTubeADs, enabled=true
+https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.loon.plugin, enabled=true
+https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/Loon.plugin, tag=订阅解析器, enabled=true
+
+[Mitm]
+ca-p12 = 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
+ca-passphrase = 95T45722
+enable = false
+skip-server-cert-verify = true
