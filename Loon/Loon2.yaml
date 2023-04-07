@@ -102,7 +102,7 @@ Streaming_inter = select,DIRECT,TW-auto,HK-auto,img-url = https://raw.githubuser
 #Instagram
 FINAL = select,DIRECT,SG,SG-auto,US,US-auto,HK,HK-auto,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
 #
-Proxys = select,HK_Filter,SG_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
+Proxys = select,SG,US,HK,HK_Filter,SG_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
 ALL-SUB = url-test,KR,JP,HK,TW,US,SG,Others,url = http://www.gstatic.com/generate_204,interval = 60,tolerance = 1500,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/SWCloud.png
 SG-auto = url-test,SG_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 2000,img-url = https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/SG.png
 US-auto = url-test,US_Filter,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 1000,img-url = https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/US.png
