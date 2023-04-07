@@ -73,23 +73,23 @@ SG = select,SG_Filter,url = http://www.gstatic.com/generate_204,interval = 600,t
 US = select,US_Filter,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 1000,img-url = https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/United_States.png
 HK = select,HK_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1000,img-url = https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Hong_Kong.png
 #Youtube
-Youtube = select,SG,SG-auto,US,US-auto,HK,HK-auto,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+Youtube = select,SG,US,SG-auto,US-auto,HK,HK-auto,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
 #Netflix
 Netflix = select,SG,SG-auto,US,US-auto,HK,HK-auto,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
 #Apple
-Apple = select,DIRECT,SG,SG-auto,US,US-auto,HK,HK-auto,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
+Apple = select,SG,SG-auto,US,US-auto,HK,HK-auto,DIRECT,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
 #Google
 Google = select,SG,SG-auto,US,US-auto,HK,HK-auto,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
 #Microsoft
-Microsoft = select,DIRECT,SG,SG-auto,US,US-auto,HK,HK-auto,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
+Microsoft = select,SG-auto,SG,US,US-auto,HK,HK-auto,DIRECT,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
 #Tiktok
 TikTok = select,US,US-auto,Proxys,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/TikTok.png
 #Telegram
 Telegram = select,SG,SG-auto,US,US-auto,HK,HK-auto,Proxys,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
 #Disney+
-Disney+ = select,SG,SG-auto,US,US-auto,HK,HK-auto,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png
+Disney+ = select,HK-auto,HK,SG,SG-auto,US,US-auto,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney.png
 #Spotify
-Spotify = select,SG,SG-auto,US,US-auto,HK,HK-auto,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+Spotify = select,HK-auto,HK,SG,SG-auto,US,US-auto,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
 #Twitter
 Twitter = select,SG,SG-auto,US,US-auto,HK,HK-auto,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png
 #Crypto
