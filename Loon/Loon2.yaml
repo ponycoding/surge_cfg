@@ -69,26 +69,26 @@ dl.l.google.com = server:119.29.29.29
 Sub-Store = https://sub.store/download/collection/MySubs,udp=false,fast-open=false,vmess-aead=false,enabled=true
 
 [Proxy Group]
-Selected = select,HK_Filter,SG_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
-Apple = select,DIRECT,Selected,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
-Netflix = select,Selected,SG_Filter,HK_Filter,TW_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
-TikTok = select,US_Filter,Selected,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/TikTok.png
+SG = select,SG_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 2000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/SG.png
+US = select,US_Filter,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/US.png
+HK = select,HK_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/HK.png
 Youtube = select,Selected,HK_Filter,SG_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+Netflix = select,Selected,SG_Filter,HK_Filter,TW_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix.png
+Apple = select,DIRECT,Selected,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
 Microsoft = select,Selected,HK_Filter,SG_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
+TikTok = select,US_Filter,Selected,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/TikTok.png
 Telegram = select,Selected,HK_Filter,SG_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
 Streaming_exter = select,Selected,SG_Filter,HK_Filter,TW_Filter,KR_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
 String_inter = select,DIRECT,TW_Filter,HK_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/StreamingSE.png
 FINAL = select,DIRECT,Selected,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+Selected = select,HK_Filter,SG_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
 ALL-SUB = url-test,KR,JP,HK,TW,US,SG,Others,url = http://www.gstatic.com/generate_204,interval = 60,tolerance = 1500,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/SWCloud.png
-SG = url-test,SG_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 2000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/SG.png
-SG-s = select,SG_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 2000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/SG.png
-US = url-test,US_Filter,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/US.png
-US-s = select,US_Filter,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/US.png
-HK = url-test,HK_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/HK.png
-HK-s = select,HK_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/HK.png
-TW = url-test,TW_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1500,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/TW.png
-KR = url-test,KR_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1500,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/KR.png
-JP = url-test,JP_Filter,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/JP.png
+SG-auto = url-test,SG_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 2000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/SG.png
+US-auto = url-test,US_Filter,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/US.png
+HK-auto = url-test,HK_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/HK.png
+TW-auto = url-test,TW_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1500,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/TW.png
+KR-auto = url-test,KR_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1500,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/KR.png
+JP-auto = url-test,JP_Filter,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 1000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/JP.png
 Others = url-test,IN_Filter,BZ_Filter,TU_Filter,RS_Filter,url = http://www.gstatic.com/generate_204,interval = 1800,tolerance = 3000,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/UN.png
 
 [Remote Filter]
