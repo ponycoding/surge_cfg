@@ -179,7 +179,7 @@ http-response ^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) scri
 http-response ^https?:\/\/backend\.getdrafts\.com\/api\/v1\/verification\/verify_receipt script-path=drafts.js, requires-body=true, timeout=10, tag=DraftsVIP
 
 [Plugin]
-https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/Loon.plugin, tag=订阅解析器, enabled=true
+https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/Loon.plugin, policy=DIRECT, tag=Sub-Store, enabled=true
 https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.loon.plugin, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Loon/Advertising/Advertising.plugin, policy=REJECT, tag=Advertising, enabled=true
 https://raw.githubusercontent.com/deezertidal/private/main/clarity.plugin, tag=克拉壁纸解锁, enabled=true
