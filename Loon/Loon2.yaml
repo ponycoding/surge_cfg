@@ -103,7 +103,7 @@ Streaming_inter = select,DIRECT,TW-auto,HK-auto,img-url = https://raw.githubuser
 FINAL = select,SG-auto,HK-auto,DIRECT,SG,US,US-auto,HK,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
 #
 Proxys = select,SG,US,HK,HK_Filter,SG_Filter,US_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
-ALL-SUB = url-test,KR,JP,HK,TW,US,SG,Others,url = http://www.gstatic.com/generate_204,interval = 60,tolerance = 1500,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/SWCloud.png
+ALL-SUB = url-test,SG,HK,US,JP,KR,TW,url = http://www.gstatic.com/generate_204,interval = 60,tolerance = 1500,img-url = https://raw.githubusercontent.com/alpha87/Loon-icon/master/Color/SWCloud.png
 SG-auto = url-test,SG_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 2000,img-url = https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/SG.png
 US-auto = url-test,US_Filter,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 1000,img-url = https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/US.png
 HK-auto = url-test,HK_Filter,url = http://www.gstatic.com/generate_204,interval = 600,tolerance = 1000,img-url = https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/HK.png
@@ -179,8 +179,8 @@ http-response ^https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) scri
 http-response ^https?:\/\/backend\.getdrafts\.com\/api\/v1\/verification\/verify_receipt script-path=drafts.js, requires-body=true, timeout=10, tag=DraftsVIP
 
 [Plugin]
-https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/Loon.plugin, policy=DIRECT, tag=Sub-Store, enabled=true
-https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.loon.plugin, enabled=true
+https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/Loon.plugin, tag=Sub-Store, enabled=true
+https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.loon.plugin, policy=DIRECT, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Loon/Advertising/Advertising.plugin, policy=REJECT, tag=Advertising, enabled=true
 https://raw.githubusercontent.com/deezertidal/private/main/clarity.plugin, tag=克拉壁纸解锁, enabled=true
 https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/Loon/Plugin/bilibili.plugin, tag=Bilibili, enabled=true
