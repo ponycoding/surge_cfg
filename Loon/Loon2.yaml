@@ -125,6 +125,7 @@ IN_Filter = NameKeyword, FilterKey = "印度"
 RS_Filter = NameKeyword, FilterKey = "俄罗斯"
 
 [Rule]
+DOMAIN-SUFFIX,openai.com,SG
 GEOIP,cn,DIRECT
 FINAL,ALL-SUB
 
